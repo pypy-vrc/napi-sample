@@ -1,0 +1,17 @@
+{
+  "name": "napi-sample",
+  "version": "0.0.0",
+  "description": "napi sample project",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "configure": "node-gyp configure",
+    "build": "node-gyp rebuild"
+  },
+  "author": "pypy <git@pypy.moe>",
+  "license": "MIT",
+  "gypfile": true,
+  "dependencies": {
+    "bindings": "^1.5.0"
+  }
+}
