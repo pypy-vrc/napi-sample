@@ -43,7 +43,12 @@ napi_value sum(napi_env env, napi_callback_info info)
     return result;
 }
 
-NAPI_MODULE_INIT()
+// The commented-out return type and the commented out formal function
+// parameters below help us keep in mind the signature of the addon
+// initialization function. We write the body as though the return value were as
+// commented below and as though there were parameters passed in as commented
+// below.
+/*napi_value*/ NAPI_MODULE_INIT(/*napi_env env, napi_value exports*/)
 {
     napi_value value;
 
